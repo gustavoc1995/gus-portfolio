@@ -1,0 +1,116 @@
+
+:root{
+    --primary-color: #011627;
+    --secondary-color: #43D9AD;
+    --tercery-color: #4D5BCE;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    font-family: 'Fira Code', monospace;
+}
+
+.navbar-container{
+    margin: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.navbar-list{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.navbar-items{
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 16px;
+    
+}
+.navbar-items span{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+#home{
+    height: 100vh;
+}
+
+.home-container{
+    width: 80%;
+    height: 78%;
+    margin: 48px auto;
+    display: flex;
+}
+
+.description-container{
+    padding: 5%;
+    width: 35%;
+    height: 80%;
+}
+
+.hi-text{
+    color: white;
+}
+
+.dev-name{
+    font-size: 48px;
+    color: white;
+}
+
+.developer-branch{
+    color: var(--secondary-color);
+}
+.dev-description{
+    color: white
+}
+
+button{
+    margin-top: 40px;
+    width: 160px;
+    height: 46px;
+    border-radius: 15px;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    box-shadow: 0 8px 8px -4px var(--tercery-color);
+}
+
+.ilustration-container{
+    width: 50%;
+    position: relative;
+}
+
+.bluir-element-1{
+    height: 300px;
+    width: 300px;
+    background: var(--tercery-color);
+    position: absolute;
+    top: 100px;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    filter: blur(80px);
+    opacity: 0.4;
+}
+.bluir-element-2{
+    height: 300px;
+    width: 300px;
+    background: var(--secondary-color);
+    position: absolute;
+    right: 45px;
+    bottom: 10px;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    filter: blur(80px);
+    opacity: 0.4;
+}
+
+.ilustration-image{
+    position: absolute;
+    margin: 25% 2px;
+    width: 540px;
+}
