@@ -16,13 +16,13 @@
     <section id="home">
         <nav class="navbar-container">
             <div class="logo">
-                <p>logo</p>
+                logo
             </div>
             <ul class="navbar-list">
-                <li class="navbar-items"><a href=""> <span>#</span>home</a></li>
-                <li class="navbar-items"><a href="#portfolio"></a><span>#</span>portfolio</li>
-                <li class="navbar-items"><a href="#about-me"></a><span>#</span>about-me</li>
-                <li class="navbar-items"><a href="#contact"></a><span>#</span>contact</li>
+                <li class="navbar-items"><a href="#home"> <span>#</span>home</a></li>
+                <li class="navbar-items"><a href="#portfolio"><span>#</span>portfolio</a></li>
+                <li class="navbar-items"><a href="#about-me"><span>#</span>about-me</a></li>
+                <li class="navbar-items"><a href="#contact"><span>#</span>contact</a></li>
             </ul>
         </nav>
         <div class="home-container">
@@ -34,54 +34,140 @@
                 <p class="dev-description"> <span class="developer-branch">> Email / Front-End Developer</span> base in
                     San Francisco Bay Area, I enjoy building responsive emails and websites.
                 </p>
-                <button>Portfolio</button>
-
-
+                <button class="portfolio-btn">Portfolio</button>
             </div>
             <div class="ilustration-container">
                 <span class="bluir-element-1"></span>
                 <span class="bluir-element-2"></span>
-                <img class="ilustration-image" src="./images/programmer.svg" alt="">
+                <img class="ilustration-image" src="./images/programmer.svg" alt="programmer ilustration">
             </div>
         </div>
 
     </section>
+
+    <section id="about-me">
+        <div class="about-container">
+            <div class="column-1">
+                <img src="./images/about-me.svg" alt="">
+            </div>
+            <div class="column-2">
+                <h1><span>#</span>About me</h1>
+                <p>s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book</p>
+
+                <div class="tab-title">
+                    <p class="tab-links active-link" id="skill-link" >Skills</p>
+                    <p class="tab-links" id="education-link" >Education</p>
+                    <p class="tab-links" id="hobbies-link" >Hobbies</p>
+                </div>
+
+                <div class="link-content active-content" id="skills">
+                    <ul>
+                        <li><span>Email Developer</span><br>Building responsive emails</li>
+                        <li><span>Web Developer</span><br>Programming dynamic websites</li>
+
+                    </ul>
+                </div>
+                <div class="link-content" id="education">
+                    <ul>
+                        <li><span>Santa Rosa Junior Colleger</span><br>Computer Science</li>
+                        <li><span>San Francisco City College</span><br>GED</li>
+                    </ul>
+                </div>
+                <div class="link-content" id="hobbies">
+                    <ul>
+                        <li><span>Photography</span><br>I enjoy taking pictures in my free time</li>
+                        <li><span>Video Editing</span><br>Nothing better than seeing a finish product like a video</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------Skills------>
+    <section id="skills-section">
+        <div class="skills-container">
+            <h3><span>#</span>Skills</h3>
+            <div class="skills-icon-container">
+                <div class="skill-item">
+                    <img src="./images/html5.svg" alt="html icon">
+                    <p>HTML</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./images/css3.svg" alt="css icon">
+                    <P>CSS</P>
+                </div>
+                <div class="skill-item">
+                    <img src="./images/javascript.svg" alt="javascript icon">
+                    <P>Javascript</P>
+                </div>
+                <div class="skill-item">
+                    <img src="./images/figma.svg" alt="figma icon">
+                    <p>Figma</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./images/mailchimp.svg" alt="mailchimp icon">
+                    <p>Mailchimp</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./images/photoshop.svg" alt="photoshop icon">
+                    <p>Photoshop</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <section id="portfolio">
         <div class="portfolio-container">
             <div class="portfolio-header">
                 <h3 class="portfolio-title"> <span>#</span> Projects</h3>
             </div>
             <div class="cards-container">
-
-
                 <div class="card">
-                    <img class="card-image" src="./images/desktop-design.jpg" alt="">
-                    <p class="card-title">Rating Component</p>
-                    <p class="card-description">Jabascript Component</p>
-                    <button class="live-sample-btn">Live</button>
-                    <button class="code-smaple-btn"> <i class="fa-solid fa-code"></i> Code</button>
+                    <div class="card-image-container">
+                        <img class="card-image" src="./images/desktop-design.jpg" alt="">
+                    </div>
+                    <div class="card-info-container">
+                        <p class="card-title">Rating Component</p>
+                        <p class="card-description">Jabascript Component</p>
+                        <button class="live-sample-btn"><i class="fa-solid fa-globe"></i> Live</button>
+                        <button class="code-smaple-btn"> <i class="fa-solid fa-code"></i> Code</button>
+                    </div>
                 </div>
-
                 <div class="card">
-                    <img class="card-image" src="./images/desktop-design.jpg" alt="">
-                    <p class="card-title">Rating Component</p>
-                    <p class="card-description">Jabascript Component</p>
-                    <button class="live-sample-btn">Live</button>
-                    <button class="code-smaple-btn"> <i class="fa-solid fa-code"></i> Code</button>
+                    <div class="card-image-container">
+                        <img class="card-image" src="./images/desktop-design.jpg" alt="">
+                    </div>
+                    <div class="card-info-container">
+                        <p class="card-title">Rating Component</p>
+                        <p class="card-description">Jabascript Component</p>
+                        <button class="live-sample-btn"><i class="fa-solid fa-globe"></i> Live</button>
+                        <button class="code-smaple-btn"> <i class="fa-solid fa-code"></i> Code</button>
+                    </div>
                 </div>
-
                 <div class="card">
-                    <img class="card-image" src="./images/desktop-design.jpg" alt="">
-                    <p class="card-title">Rating Component</p>
-                    <p class="card-description">Jabascript Component</p>
-                    <button class="live-sample-btn">Live</button>
-                    <button class="code-smaple-btn"> <i class="fa-solid fa-code"></i> Code</button>
+                    <div class="card-image-container">
+                        <img class="card-image" src="./images/desktop-design.jpg" alt="">
+                    </div>
+                    <div class="card-info-container">
+                        <p class="card-title">Rating Component</p>
+                        <p class="card-description">Jabascript Component</p>
+                        <button class="live-sample-btn"><i class="fa-solid fa-globe"></i> Live</button>
+                        <button class="code-smaple-btn"> <i class="fa-solid fa-code"></i> Code</button>
+                    </div>
                 </div>
             </div>
+    </section>
 
+    <section id="contact">
 
     </section>
+
     <script src="https://kit.fontawesome.com/57233bb7b3.js" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+
 </body>
 
 </html>
