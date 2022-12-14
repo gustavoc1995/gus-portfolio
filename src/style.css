@@ -3,6 +3,9 @@
     --secondary-color: #43D9AD;
     --tercery-color: #4D5BCE;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
@@ -230,7 +233,7 @@ button {
 
 /*------------Skills Section --------*/
 .skills-container {
-    width: 75%;
+    width: 80vw;
     height: 300px;
     margin: 40px auto;
     border-radius: 15px;
@@ -273,16 +276,15 @@ button {
 
 /* Portfolio Section */
 #portfolio {
-    height: 70vh;
+    padding: 40px 80px;
 }
 
 .portfolio-container {
-    width: 1058px;
+    width: 80vw;
     height: 518px;
     margin: 100px auto;
 
 }
-
 .portfolio-header {
     width: 100%;
     height: 42px;
@@ -310,6 +312,10 @@ button {
     height: 519px;
     border-radius: 10px;
     box-shadow: 10px 10px 74px -5px rgba(67, 217, 173, 0.34);
+    transition: transform 0.5s;
+}
+.card:hover{
+    transform: translateY(-15px);
 }
 .card-image-container{
     width: 100%;
@@ -352,4 +358,82 @@ button {
     color: white;
     background: var(--primary-color);
     border: solid var(--secondary-color) 1px;
+}
+
+/*-------Contact ---------*/
+#contact{
+    padding: 40px 80px;
+}
+.contact-container{
+    width: 80vw;
+    height: 500px;
+    margin: 43px auto;
+    display: flex;
+}
+.contact-info{
+    width: 35%;
+    color: white;
+}
+.form-container{
+    width: 65%;
+}
+.contact-info h3{
+    font-size: 30px;
+}
+.contact-info h3 span{
+    color: var(--secondary-color);
+}
+.contact-info p{
+    margin-top: 30px;
+}
+.contact-info p i{
+    color: var(--secondary-color);
+    margin-right: 15px;
+    font-size: 25px;
+}
+.contact-icons{
+    margin-top: 30px;
+}
+.contact-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #808588;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.contact-icons a:hover{
+    color: var(--secondary-color);
+    transform: translateY(-5px);
+}
+
+.btn{
+    height: 45px;
+    width: 190px;
+    margin-top: 25px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: solid 1px ;
+}
+
+.btn:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color)
+}
+.form-container form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+   background: #f8f8f8;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+
 }
